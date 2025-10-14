@@ -1157,3 +1157,80 @@ footer p {
 }
 
 /* pre loader end */
+
+
+
+/* ------------------order history page start------------------ */
+.orderDetailsBtn{
+  font-family: Lato;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #1570EF;
+}
+.orderDetailsBtn:hover{
+  text-decoration: underline;
+}
+.st_cancelled {
+  background: #FF3B30;
+}
+.st_progress {
+  background: #FFCC00;
+}
+.st_completed {
+  background: #38CB89;
+}
+.orderSummer{
+  background: #9CB31A14;
+  border: 1px solid #9CB31A;
+  padding: 24px;
+  border-radius: 4px;
+}
+.orderSummer .summeryDetails h1{
+  font-family: Public Sans;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+color:#191C1F;
+margin-bottom: 8px;
+}
+.orderSummer .summeryDetails h2{
+  font-family: Public Sans;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #475156;
+
+}
+.orderSummer .summeryDetails span{
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: block;
+  background: #475156;
+  margin-top: 4px;
+}
+.orderSummer h3{
+font-family: Public Sans;
+font-weight: 600;
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0%;
+color:#9CB31A ;
+}
+@media (max-width: 370px) {
+  .pagination_area .page-link{
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+  }
+  .pagination_area .page-item:first-child .page-link{
+    margin-right: 5px;
+  }
+  .pagination_area .page-item:last-child .page-link{
+    margin-left: 5px;
+  }
+}

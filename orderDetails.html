@@ -32,7 +32,7 @@
 
 <body>
     <!-- pre loader with logo start -->
-    <div class="preloader ">
+    <!-- <div class="preloader ">
         <div class="d-flex h-100 w-100 justify-content-center align-items-center flex-column">
             <div class="logoBox  ">
                 <img src="assets/images/logo.webp" alt="Logo">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- pre loader with logo end -->
 
     <!-- ========================Header area start======================== -->
@@ -462,8 +462,7 @@
     <section class="page_title_area">
         <div class="container">
             <div class="py-md-5 py-4">
-                <h1 class="text-center">My Account</h1>
-                <p class="text-center">Welcome back, Jack!</p>
+                <h1 class="text-center">Order Details</h1>
             </div>
         </div>
     </section>
@@ -472,288 +471,17 @@
     <!-- main content area start -->
     <section class="main_content_area pb-5">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4">
-                    <!-- Trigger Button for Mobile -->
-                    <div class="dashboard_menu_trigger">
-                        <img src="assets/images/dashboard_link_icons/dashbord-white.svg" alt="Menu">
-                    </div>
-                    <div class="dashboard_menu_list">
-                        <ul class="p-0 m-0">
-                            <li><a href="index.html">
-                                    <span class="de-icon">
-                                        <img src="assets/images/dashboard_link_icons/dashbord-dark.svg" alt="">
-                                    </span>
-                                    <span class="ac-icon">
-                                        <img src="assets/images/dashboard_link_icons/dashbord-white.svg" alt="">
-                                    </span>
-                                    Dashboard</a></li>
-                            <li><a href="orderHistoy.html" class="active">
-                                    <span class="de-icon">
-                                        <img src="assets/images/dashboard_link_icons/history-dark.svg" alt="">
-                                    </span>
-                                    <span class="ac-icon">
-                                        <img src="assets/images/dashboard_link_icons/history-white.svg" alt="">
-                                    </span>
-                                    Order History</a></li>
-                            <li><a href="wishlist.html">
-                                    <span class="de-icon">
-                                        <img src="assets/images/dashboard_link_icons/wishlist-dark.svg" alt="">
-                                    </span>
-                                    <span class="ac-icon">
-                                        <img src="assets/images/dashboard_link_icons/wishlist-white.svg" alt="">
-                                    </span>
-                                    Wishlist</a></li>
-                            <li><a href="addresses.html">
-                                    <span class="de-icon">
-                                        <img src="assets/images/dashboard_link_icons/address-dark.svg" alt="">
-                                    </span>
-                                    <span class="ac-icon">
-                                        <img src="assets/images/dashboard_link_icons/address-white.svg" alt="">
-                                    </span>
-                                    Addresses</a></li>
-                            <li><a href="paymentMethods.html">
-                                    <span class="de-icon">
-                                        <img src="assets/images/dashboard_link_icons/payments-dark.svg" alt="">
-                                    </span>
-                                    <span class="ac-icon">
-                                        <img src="assets/images/dashboard_link_icons/payment-white.svg" alt="">
-                                    </span>
-                                    Payment Methods</a></li>
-                            <li><a href="profileSettings.html">
-                                    <span class="de-icon">
-                                        <img src="assets/images/dashboard_link_icons/profileSettings-dark.svg" alt="">
-                                    </span>
-                                    <span class="ac-icon">
-                                        <img src="assets/images/dashboard_link_icons/profileSettings-white.svg" alt="">
-                                    </span>
-                                    Profile Settings</a></li>
-                            <li><a href="logouts.html">
-                                    <span class="icon">
-                                        <img src="assets/images/dashboard_link_icons/logout-dark.svg" alt="">
-                                    </span>
-                                    Logout</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-8">
-                    <div class="dashboard_content_box">
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="dashboard_content_item p-4">
-                                    <h2>
-                                        Order History
-                                    </h2>
-                                    <!-- recent orders table -->
-                                    <div class="table-responsive">
-                                        <table class="table recentOrdersTable adminSideTable">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        ID
-                                                    </th>
-                                                    <th>
-                                                        Date
-                                                    </th>
-                                                    <th>
-                                                        Price
-                                                    </th>
-                                                    <th>
-                                                        status
-                                                    </th>
-                                                    <th>
-                                                        ACTION
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_cancelled">Canceled</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_progress">In-progress</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_progress">In-progress</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_progress">In-progress</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_completed">Completed</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_completed">Completed</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_completed">Completed</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        111102
-                                                    </td>
-                                                    <td>
-                                                        Dec 30, 2019
-                                                    </td>
-                                                    <td>
-                                                        $1075.00
-                                                    </td>
-                                                    <td>
-                                                        <span class="order_status st_completed">Completed</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="orderDetails.html" class="orderDetailsBtn">
-                                                            View Details
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- pagination area start -->
-                                    <div class="pagination_area d-flex justify-content-center align-items-center mt-4">
-                                        <nav>
-                                            <ul class="pagination mb-0 gap-2 flex-wrap">
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#" aria-label="Previous">
-                                                        <span aria-hidden="true">
-                                                            <i class="fa-solid fa-arrow-left"></i>
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="page-item"><a class="page-link active" href="#">01</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">04</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">05</a></li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#" aria-label="Next">
-                                                        <span aria-hidden="true"><i
-                                                                class="fa-solid fa-arrow-right"></i></span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="orderSummer">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div class="summeryDetails">
+                        <h1>#96459761</h1>
+                        <div class="d-flex justify-content-start align-items-center gap-3 flex-wrap">
+                            <h2>3 Products</h2>
+                            <span></span>
+                            <h2>Order Placed in 15 July, 2025 </h2>
                         </div>
                     </div>
+                    <h3>$2,187.99</h3>
                 </div>
             </div>
         </div>
