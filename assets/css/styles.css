@@ -820,7 +820,6 @@ background: #8e8e934d;
     background: #ffffff;
     border-radius: 0 10px 10px 0;
     /* Half circle effect */
-    box-shadow: 0px 4px 21px 0px #0000000a;
     border: 1px solid #e5e5ea;
     padding: 20px 10px;
     transition: all 0.4s ease;
@@ -829,7 +828,9 @@ background: #8e8e934d;
 
   .dashboard_menu_list.open {
     left: 0;
+    box-shadow: 0px 4px 21px 0px #0000003d;
   }
+
 
   .dashboard_menu_trigger {
     display: flex;

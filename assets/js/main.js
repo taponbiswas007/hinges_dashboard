@@ -51,3 +51,31 @@
           $('.preloader').fadeOut('slow');
       }, 2000);
   });
+
+    // dashboard menu
+     $(document).ready(function () {
+    const $trigger = $('.dashboard_menu_trigger');
+    const $sidebar = $('.dashboard_menu_list');
+
+    // When mouse enters trigger, open sidebar
+    $trigger.on('mouseenter', function () {
+      $sidebar.addClass('open');
+    });
+
+    // When mouse leaves sidebar, remove class
+    $sidebar.on('mouseleave', function () {
+      $sidebar.removeClass('open');
+    });
+
+    // When clicking anywhere outside sidebar and trigger, close sidebar
+    $(document).on('click', function (e) {
+      if (
+        !$sidebar.is(e.target) &&
+        $sidebar.has(e.target).length === 0 &&
+        !$trigger.is(e.target) &&
+        $trigger.has(e.target).length === 0
+      ) {
+        $sidebar.removeClass('open');
+      }
+    });
+  });
