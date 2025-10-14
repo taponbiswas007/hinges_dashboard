@@ -940,6 +940,7 @@ background: #8e8e934d;
   color: #475156;
   padding: 10px 15px;
   vertical-align: middle;
+  text-wrap: nowrap;
 }
 
 .adminSideTable tbody tr td {
@@ -1161,51 +1162,59 @@ footer p {
 
 
 /* ------------------order history page start------------------ */
-.orderDetailsBtn{
+.orderDetailsBtn {
   font-family: Lato;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-color: #1570EF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #1570EF;
 }
-.orderDetailsBtn:hover{
+
+.orderDetailsBtn:hover {
   text-decoration: underline;
 }
+
 .st_cancelled {
   background: #FF3B30;
 }
+
 .st_progress {
   background: #FFCC00;
 }
+
 .st_completed {
   background: #38CB89;
 }
-.orderSummer{
+
+.orderSummer {
   background: #9CB31A14;
   border: 1px solid #9CB31A;
   padding: 24px;
   border-radius: 4px;
 }
-.orderSummer .summeryDetails h1{
+
+.orderSummer .summeryDetails h1 {
   font-family: Public Sans;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-letter-spacing: 0%;
-color:#191C1F;
-margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #191C1F;
+  margin-bottom: 8px;
 }
-.orderSummer .summeryDetails h2{
+
+.orderSummer .summeryDetails h2 {
   font-family: Public Sans;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-color: #475156;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #475156;
 
 }
-.orderSummer .summeryDetails span{
+
+.orderSummer .summeryDetails span {
   height: 5px;
   width: 5px;
   border-radius: 50%;
@@ -1213,24 +1222,538 @@ color: #475156;
   background: #475156;
   margin-top: 4px;
 }
-.orderSummer h3{
-font-family: Public Sans;
-font-weight: 600;
-font-size: 28px;
-line-height: 32px;
-letter-spacing: 0%;
-color:#9CB31A ;
+
+.orderSummer h3 {
+  font-family: Public Sans;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #9CB31A;
 }
+
+.orderExpectedArrivel {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #475156;
+  margin-bottom: 0;
+}
+
+.orderExpectedArrivel span {
+  color: #191C1F;
+}
+
+.orderTracer {
+  width: 90%;
+}
+
+.orderTracer_progressline {
+  width: 95%;
+  height: 8px;
+  background: #2D181729;
+  border-radius: 10px;
+
+}
+
+.orderTracer_complete_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.order_placed_completed,
+.order_packaging,
+.order_out_for_deliver,
+.order_delivered_completed {
+  position: relative;
+}
+
+.order_placed_completed::after,
+.order_packaging::after,
+.order_out_for_deliver::after,
+.order_delivered_completed::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #2D1817;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  /* smooth effect */
+}
+
+.order_placed_completed::after {
+  width: 0%;
+}
+
+.order_packaging::after {
+  width: 33%;
+}
+
+.order_out_for_deliver::after {
+  width: 66%;
+}
+
+.order_delivered_completed::after {
+  width: 100%;
+}
+
+.orderTracer_progressline .progressbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #2D1817;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.orderTracer_progressline .progressbox.active {
+  border: 2px solid #FFFFFF;
+  background: #ffffff;
+}
+
+.orderTracer_progressline .progressbox.completed {
+  background: #2D1817;
+  border: 2px solid #ffffff;
+}
+
+.orderTracer_steps {
+  padding-top: 30px;
+}
+
+.orderTracer_steps .stepbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  flex-direction: column;
+  opacity: .6;
+}
+
+.orderTracer_steps .stepbox .step_iconBox {
+  height: 32px;
+  width: 32px;
+}
+
+.orderTracer_steps .stepbox h1 {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #191C1F;
+
+}
+
+.orderTracer_steps .stepbox.completed,
+.orderTracer_steps .stepbox.active {
+  opacity: 1;
+}
+
+.orderTracer_steps .stepbox:last-child {
+  padding-right: 9px;
+}
+
+.orderTracer_steps .stepbox:nth-child(2) {
+  padding-left: 5px;
+}
+
+.trackOrderBtn {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 23.76px;
+  letter-spacing: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #9CB31A;
+  padding: 0 21px;
+  height: 45px;
+  border: 1.5px solid #9CB31A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.trackOrderBtn:hover {
+  background: #9cb31a34;
+  color: #9CB31A;
+}
+
+.cancelOrderBtn {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF383C;
+  border: 1.5px solid #FF383C;
+  padding: 0 21px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.cancelOrderBtn:hover {
+  background: #ff383c34;
+  color: #FF383C;
+}
+
+.orderDetailsTable h2 {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #191C1F;
+  margin-bottom: 15px;
+}
+
+.orderDetailsTable h2 span {
+  color: #5F6C72;
+}
+
+.orderDetailsTable tbody tr {
+  border-bottom: 1px solid #E4E7E9;
+}
+
+.orderDetailsTable tbody tr td:first-child {
+  padding-left: 0;
+}
+
+.orderDetailsTable tbody tr:last-child {
+  border-bottom: none;
+}
+
+.billing_and_shipping_info_area {
+  background: #FFFFFF;
+  border: 1px solid #E4E7E9;
+  padding: 32px 24px;
+}
+
+.billing_and_shipping_info_area .info_box {
+  border-right: 1px solid #E4E7E9;
+  padding-right: 24px;
+}
+
+.billing_and_shipping_info_area .info_box h1 {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #191C1F;
+  margin-bottom: 24px;
+}
+
+.billing_and_shipping_info_area .info_box h2 {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #191C1F;
+  margin-bottom: 8px;
+}
+
+.billing_and_shipping_info_area .info_box p {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #5F6C72;
+  margin-bottom: 12px;
+}
+
+.billing_and_shipping_info_area .info_box h3 {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #191C1F;
+}
+
+.billing_and_shipping_info_area .info_box h3 span {
+  color: #5F6C72;
+}
+
+#cancelOrderModal .modal-title {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #191C1F;
+}
+
+#cancelOrderModal .modal-body label {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #191C1F;
+}
+
+#cancelOrderModal .modal-body .form-select {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #475156;
+}
+
+#cancelOrderModal .modal-body .form-control {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #475156;
+  resize: none;
+}
+
+.returnItemsBtn {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 48px;
+  letter-spacing: 1.2%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #9CB31A;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+  padding: 0 30px;
+  transition: all 0.3s ease;
+}
+
+.returnItemsBtn:hover {
+  background: #7a9613;
+  color: #ffffff;
+}
+
+.returnItemsBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.fm-forum {
+  font-family: Forum !important;
+  font-weight: 400 !important;
+  font-size: 45px !important;
+}
+
+.input_feild_area label {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #191C1F;
+  margin-bottom: 8px;
+}
+
+.input_feild_area .form-control,
+.input_feild_area .form-select {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #77878F;
+  height: 45px;
+  resize: none;
+}
+
+.formFileinput_place {
+  border: 0.6px dashed #9CB31A;
+  background: #9CB31A14;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.export_img_icon_box {
+  height: 29px;
+  width: 29px;
+}
+
+.formFileinput_place p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4D4D4D;
+  margin-top: 0;
+}
+
+
+.customFileInputFeild {
+  display: none;
+}
+
+.input_feild_area .customFileLabel {
+  display: inline-block;
+  background: #9CB31A;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.3s;
+  max-width: 254px;
+  width: 100%;
+
+}
+
+.customFileLabel:hover {
+  background: #8CA114;
+}
+
+.returnSubmit_btn {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.2%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #9CB31A;
+  border-radius: 4px;
+  height: 48px;
+  width: 157px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.returnSubmit_btn:hover {
+  background: #7a9613;
+  color: #ffffff;
+}
+
+@media (max-width: 1400px) {
+  .orderTracer_progressline {
+    width: 94%;
+  }
+}
+
+@media (max-width: 991px) {
+  .orderTracer_progressline {
+    width: 90%;
+  }
+
+  .billing_and_shipping_info_area .info_box {
+    border-bottom: 1px solid #E4E7E9;
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .orderTracer_progressline {
+    width: 87%;
+  }
+}
+
+@media (max-width: 450px) {
+  .orderTracer {
+    width: 100%;
+  }
+
+  .orderTracer_progressline {
+    height: 4px;
+  }
+
+  .orderTracer_progressline .progressbox {
+    height: 19px;
+    width: 19px;
+    font-size: 10px;
+  }
+
+  .orderTracer_steps .stepbox .step_iconBox {
+    height: 20px;
+    width: 20px;
+  }
+
+  .orderTracer_steps .stepbox h1 {
+    font-size: 11px;
+  }
+
+  .orderTracer_steps .stepbox {
+    row-gap: 3px;
+  }
+
+  .orderTracer_steps {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: 370px) {
-  .pagination_area .page-link{
+  .orderTracer_progressline {
+    width: 85%;
+  }
+
+  .pagination_area .page-link {
     height: 25px;
     width: 25px;
     font-size: 10px;
   }
-  .pagination_area .page-item:first-child .page-link{
+
+  .pagination_area .page-item:first-child .page-link {
     margin-right: 5px;
   }
-  .pagination_area .page-item:last-child .page-link{
+
+  .pagination_area .page-item:last-child .page-link {
     margin-left: 5px;
+  }
+}
+
+@media (max-width: 346px) {
+  .orderTracer_progressline {
+    width: 83%;
   }
 }
