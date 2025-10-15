@@ -1324,7 +1324,7 @@ footer p {
 
 .orderTracer_progressline .progressbox.active {
   border: 2px solid #FFFFFF;
-  background: #ffffff;
+  background: #000000;
 }
 
 .orderTracer_progressline .progressbox.completed {
