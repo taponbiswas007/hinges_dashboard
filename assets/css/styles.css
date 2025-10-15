@@ -1757,3 +1757,195 @@ footer p {
     width: 83%;
   }
 }
+
+/* wishlist page css start */
+.wishlistCard {
+  background: #ffffff;
+}
+
+.bestSellerLable {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 11.33px;
+  line-height: 11.33px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  background: #E5E5EA;
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+
+.reaction_label span {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: #EDEDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.wishlist_image_box {
+  width: 100%;
+  aspect-ratio: 253 / 221;
+  overflow: hidden;
+}
+
+.wishlist_card_content {
+  padding-top: 30px;
+}
+
+.wishlist_card_content h1 {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+}
+
+.wishlist_card_content h2 {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #333333;
+}
+
+.wishlist_card_content h3 {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+  color: #333333;
+}
+
+.wishlist_card_content h3 span {
+  font-weight: 400;
+
+}
+
+.wishlist_card_content p {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+}
+
+.w_cart_btn {
+  width: 100%;
+  border: 1px solid #3A3845;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3A3845;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.w_cart_btn:hover {
+  background: #3a384513;
+}
+
+.w_cart_btn .cartBtn_img_box {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #EDEDED;
+  padding: 3px;
+}
+
+/* address page area start */
+.address_card {
+  background: #FFFFFF;
+  border: 1px solid #E4E7E9;
+  box-shadow: 0px 4px 21px 0px #0000000A;
+  border-radius: 19px;
+}
+
+.address_card_header {
+  border-bottom: 1px solid #E4E7E9;
+  padding: 16px 24px;
+}
+
+.address_card_header h1 {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #191C1F;
+}
+
+.address_card_body {
+  padding: 16px 24px;
+}
+
+.address_card_body h2 {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #191C1F;
+  margin-bottom: 12px;
+}
+
+.address_card_body p {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #5F6C72;
+  margin-bottom: 12px;
+}
+
+.address_card_body h3 {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #191C1F;
+  margin-bottom: 19px;
+}
+
+.address_card_body h3 span {
+  color: #5F6C72;
+}
+
+.edit_address_btn {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 48px;
+  letter-spacing: 1.2%;
+  text-transform: uppercase;
+  color: #9CB31A;
+  height: 48px;
+  width: 148px;
+  border: 2px solid #9CB31A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.edit_address_btn:hover {
+  background: #9cb31a34;
+  color: #9CB31A;
+}
