@@ -2128,10 +2128,60 @@ footer p {
     padding: 5px;
   }
 
-  .paymentCard_inner {
-    /* flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%; */
-  }
+}
+
+/* profile settings css start */
+
+.profile_settings_form label{
+  font-family: Lato;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #191C1F;
+}
+.profile_settings_form input,
+.profile_settings_form select{
+  font-family: Lato;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #77878F;
+}
+.saveChangeBtn_area button{
+  font-family: Lato;
+font-weight: 700;
+font-size: 14px;
+line-height: 48px;
+letter-spacing: 1.2%;
+text-transform: uppercase;
+height: 48px;
+padding: 0 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #ffffff;
+border-radius: 2px;
+}
+.profile_edit_cancel{
+  background:#C7C7CC ;
+  transition: all 0.3s ease;
+}
+.profile_edit_cancel:hover{
+  background:#a7a7aa ;
+}
+.saveChanges{
+  background: #9CB31A;
+   transition: all 0.3s ease;
+}
+.saveChanges:hover{
+  background: #879c0e;
+}
+.changespass{
+  background: #9CB31A;
+   transition: all 0.3s ease;
+}
+.changespass:hover{
+  background: #879c0e;
 }
