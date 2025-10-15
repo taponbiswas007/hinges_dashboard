@@ -1949,3 +1949,189 @@ footer p {
   background: #9cb31a34;
   color: #9CB31A;
 }
+
+/* payment method page css start */
+
+.add_new_card {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #9CB31A;
+  transition: all 0.3s ease;
+}
+
+.add_new_card:hover {
+  text-decoration: underline;
+}
+
+.dashboard_modal .modal-title {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #191C1F;
+}
+
+.dashboard_modal .modal-body label {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #191C1F;
+}
+
+.dashboard_modal .modal-body .form-control,
+.dashboard_modal .modal-body .form-select {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #475156;
+  height: 45px;
+  resize: none;
+}
+
+.addCardBtn {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 48px;
+  letter-spacing: 1.2%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #9CB31A;
+  height: 48px;
+  width: 123px;
+}
+
+.payment_card_item {
+  border: 1px solid var(--Grays-Gray-5, #E5E5EA);
+  box-shadow: 0px 4px 21px 0px #0000000a;
+  border-radius: 19px;
+  padding: 24px;
+}
+
+.payment_card_item .card_type {
+  height: 44px;
+  width: 63px;
+  box-shadow: 0px 0px 6.78px 0px #00000012;
+  border: 0.9px solid #D9D9D9;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment_card_item .card_info h4 {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #2D1817;
+}
+
+.primarylabel {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #00B445;
+  background: #00B44533;
+  border-radius: 2px;
+  padding: 3px 5px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.payment_card_item .card_info p {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #5F6C72;
+}
+
+.remove_card {
+  width: 41px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ED000626;
+  border-radius: 9px;
+  transition: all 0.3s ease;
+}
+
+.remove_card:hover {
+  background: #ed000833;
+}
+
+.edit_card {
+  width: 41px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E5E5EA;
+  border-radius: 9px;
+  transition: all 0.3s ease;
+}
+
+.edit_card:hover {
+  background: #C7C7CC;
+}
+
+@media (max-width: 420px) {
+  .payment_card_item {
+    padding: 10px;
+  }
+
+  .payment_card_item .card_info h4 {
+    font-size: 13px;
+  }
+
+  .primarylabel {
+    font-size: 10px;
+    margin-left: 4px;
+  }
+
+  .payment_card_item .card_info p {
+    font-size: 13px;
+  }
+
+  .remove_card {
+    border-radius: 4px;
+    width: 26px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .edit_card {
+    border-radius: 4px;
+    width: 26px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .paymentCard_inner {
+    /* flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; */
+  }
+}
