@@ -153,6 +153,12 @@ img {
 
 /* typography end */
 
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: unset;
+  }
+}
+
 /* header area start */
 .logo {
   width: 137px;
@@ -727,7 +733,7 @@ background: #8e8e934d;
   border-radius: 19px;
   padding: 23px 15px;
   position: sticky;
-  top: 100px;
+  top: 150px;
 }
 
 .dashboard_menu_list li {
@@ -941,7 +947,21 @@ background: #8e8e934d;
   padding: 10px 15px;
   vertical-align: middle;
   text-wrap: nowrap;
+  text-align: center;
 }
+.adminSideTable thead tr th{
+    width: 20%;
+}
+
+/* .adminSideTable thead tr th:nth-child(1){
+    width: 60px;
+}
+.adminSideTable thead tr th:nth-child(2){
+    width: 182px;
+}
+.adminSideTable thead tr th:nth-child(4){
+    width: 139px;
+} */
 
 .adminSideTable tbody tr td {
   font-family: Lato;
@@ -949,12 +969,15 @@ background: #8e8e934d;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #475156;
+  color: #000;
   vertical-align: middle;
   padding: 24px 15px;
   text-wrap: nowrap;
+  text-align: center;
 }
-
+/* .adminSideTable tbody tr td:last-child {
+  width: 135px;
+} */
 .t_img_box {
   height: 72px;
   width: 72px;
@@ -969,7 +992,7 @@ background: #8e8e934d;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #191C1F;
+  color: #000;
   margin-bottom: 4px;
 }
 
@@ -979,7 +1002,7 @@ background: #8e8e934d;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #5F6C72;
+  color: #000;
   margin-top: 0;
 }
 
@@ -1002,7 +1025,7 @@ background: #8e8e934d;
 }
 
 .st_processing {
-  background: #FF9500;
+  background: #FFCC00;
 }
 
 .st_shipped {
@@ -1169,10 +1192,11 @@ footer p {
   line-height: 20px;
   letter-spacing: 0%;
   color: #1570EF;
+  transition: all 0.3s ease;
 }
 
 .orderDetailsBtn:hover {
-  text-decoration: underline;
+  color: #0b4698;
 }
 
 .st_cancelled {
@@ -1208,19 +1232,18 @@ footer p {
   font-family: Public Sans;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   letter-spacing: 0%;
   color: #475156;
 
 }
 
 .orderSummer .summeryDetails span {
-  height: 5px;
-  width: 5px;
+  height: 3px;
+  width: 3px;
   border-radius: 50%;
   display: block;
   background: #475156;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .orderSummer h3 {
@@ -1525,7 +1548,7 @@ footer p {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #475156;
+  color: #000;
 }
 
 #cancelOrderModal .modal-body .form-control {
@@ -1589,7 +1612,7 @@ footer p {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #77878F;
+  color: #000;
   height: 45px;
   resize: none;
 }
@@ -1732,7 +1755,7 @@ footer p {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .orderTracer_progressline {
     width: 85%;
   }
@@ -1749,6 +1772,9 @@ footer p {
 
   .pagination_area .page-item:last-child .page-link {
     margin-left: 5px;
+  }
+  .orderSummer .summeryDetails h2{
+    font-size: 12px;
   }
 }
 
@@ -1832,7 +1858,7 @@ footer p {
   font-family: Lato;
   font-weight: 500;
   font-size: 20px;
-  color: #333333;
+  color: #000000;
 }
 
 .w_cart_btn {
@@ -1864,7 +1890,7 @@ footer p {
   width: 22px;
   border-radius: 50%;
   background: #EDEDED;
-  padding: 3px;
+  padding: 5px;
 }
 
 /* address page area start */
@@ -1994,7 +2020,7 @@ footer p {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #475156;
+  color: #000;
   height: 45px;
   resize: none;
 }
@@ -2147,7 +2173,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 letter-spacing: 0%;
-color: #77878F;
+color: #000;
 }
 .saveChangeBtn_area button{
   font-family: Lato;
