@@ -153,7 +153,7 @@ img {
 
 /* typography end */
 
-@media (min-width: 576px) {
+@media (max-width: 768px) {
   .container, .container-sm {
     max-width: unset;
   }
@@ -947,10 +947,13 @@ background: #8e8e934d;
   padding: 10px 15px;
   vertical-align: middle;
   text-wrap: nowrap;
-  text-align: center;
+  text-align: left;
 }
 .adminSideTable thead tr th{
     width: 20%;
+}
+.adminSideTable thead tr th:last-child{
+    max-width: 120px;
 }
 
 /* .adminSideTable thead tr th:nth-child(1){
@@ -973,7 +976,7 @@ background: #8e8e934d;
   vertical-align: middle;
   padding: 24px 15px;
   text-wrap: nowrap;
-  text-align: center;
+  text-align: left;
 }
 /* .adminSideTable tbody tr td:last-child {
   width: 135px;
@@ -1461,9 +1464,9 @@ footer p {
   border-bottom: 1px solid #E4E7E9;
 }
 
-.orderDetailsTable tbody tr td:first-child {
+/* .orderDetailsTable tbody tr td:first-child {
   padding-left: 0;
-}
+} */
 
 .orderDetailsTable tbody tr:last-child {
   border-bottom: none;
@@ -1557,7 +1560,7 @@ footer p {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #475156;
+  color: #000;
   resize: none;
 }
 
@@ -1991,7 +1994,7 @@ footer p {
 }
 
 .add_new_card:hover {
-  text-decoration: underline;
+  color: #637309;
 }
 
 .dashboard_modal .modal-title {
