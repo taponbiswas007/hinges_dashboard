@@ -156,10 +156,50 @@ img {
 
 
 @media (max-width: 768px) {
-  .container, .container-sm {
-    max-width: unset;
-  }
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
 }
+
+
+/* @media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1080px;
+    }
+}
+*/
+@media (min-width: 769px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: unset;
+        width: calc(100% - 50px);
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: unset;
+        width: calc(100% - 80px);
+    }
+}
+
 
 /* header area start */
 .logo {
