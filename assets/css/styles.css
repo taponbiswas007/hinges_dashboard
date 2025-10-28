@@ -153,6 +153,8 @@ img {
 
 /* typography end */
 
+
+
 @media (max-width: 768px) {
   .container, .container-sm {
     max-width: unset;
@@ -816,7 +818,7 @@ background: #8e8e934d;
 }
 
 /* Half Circle Sidebar */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .dashboard_menu_list {
     position: fixed;
     top: 50%;
